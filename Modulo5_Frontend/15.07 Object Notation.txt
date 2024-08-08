@@ -1,0 +1,57 @@
+15.07 Object Notation
+
+JSON do JavaScript, como const pessoa = { nome:"tanto faz", idade: 22}; 
+
+Criando um Prototype, é como se ele herdasse de Object
+
+Criando novos objetos usando funções construtoras
+function Dog(name){
+	this.name=name;
+	latir: function(){
+		return "auau";
+	}
+	latir2(){
+		return "auau";
+	}
+
+}
+
+-> e então: const dog1 = new Dog("Max");
+
+Para trocar uma função do prototype, acessamos a propriedade .prototype e a propriedade da função, igualando àquela que queremos
+
+Dog.prototype.toString = function toString(){
+	return `Dog[name:${this.name}]`;
+}
+
+**É melhor de usar
+type Pessoa = {
+...
+}
+
+function saudar(umaPessoa:Pessoa){
+...
+}
+
+Se nome propriedade começa com get: leitura. Com set: escrita -> JS
+Com TS, ele declara como readonly os gets
+
+Não existe classe semanticamente no JS, é só uma sintaxe diferente
+*o problema no trecho abaixo é que os valores devem ser inicializados de alguma forma
+**função constructor
+class Pessoa {
+	nome: string;
+	idade: number;
+	constructor(umNome:string, umaIdade:number){
+		this.nome = umNome;
+		this.idade= umaIdade;
+	}
+}
+
+*Com hashtag antes do nome da propriedade, ela se torna de acesso privado
+
+Também tem como criar a classe com propriedades publicas diretamente pela definição no constructor no TS
+
+constructor(public nome:string, public idade:number){} (dentro da classe)
+
+Classes e métodos abstratos são elementos próprios do TS

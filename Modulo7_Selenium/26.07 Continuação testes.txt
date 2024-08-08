@@ -1,0 +1,13 @@
+26.07 Continuação testes
+
+Page Objects, diagramas, técnicas para geração de po
+
+Po evita repetições e organiza uma classe auxiliar
+
+Wait para "sincronizar"
+
+package dotnetseleniumextras.waithelpers p ajudar
+
+Etapas de um teste
+
+planejamento, design, configuração do ambiente, preparação dos dados de teste, execução e relatórios/rastreamento de defeitos

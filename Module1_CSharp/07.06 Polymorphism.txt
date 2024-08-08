@@ -1,0 +1,24 @@
+Abstract: behaviours and attributes that every child has to have.
+Interface: which methods class has to implement. Every class that implements it can do it in their way.
+
+The difference is that abstract classes can have already implemented methods (that do not change among their children)
+If object implements interface, we can use its method: "everybody that implements this class can use this method"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,,,,,,,,

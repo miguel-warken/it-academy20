@@ -1,0 +1,69 @@
+create table medicos(
+    crm char(8),
+    nome varchar(50),
+    especialidade varchar(20)
+);
+
+alter table medicos add constraint pk_medicos PRIMARY KEY (crm);
+
+INSERT INTO medicos (crm, nome, especialidade)
+VALUES ('12345678', 'Dr. João Silva', 'Clínica Geral');
+
+INSERT INTO medicos (crm, nome, especialidade)
+VALUES ('87654321', 'Dra. Ana Souza', 'Pediatria');
+
+INSERT INTO medicos (crm, nome, especialidade)
+VALUES ('56781234', 'Dr. Marcos Oliveira', 'Ortopedia');
+
+create table pacientes(
+    cpf char(11),
+    nome varchar(50),
+    sexo char(1)
+);
+
+alter table pacientes add constraint pk_pacientes PRIMARY KEY (cpf);
+alter table pacientes add constraint chk_pacientes_sexo CHECK (sexo IN ('M', 'F'));
+
+INSERT INTO pacientes (cpf, nome, sexo)
+VALUES ('12345678901', 'Maria da Silva', 'F');
+
+INSERT INTO pacientes (cpf, nome, sexo)
+VALUES ('98765432109', 'José Oliveira', 'M');
+
+INSERT INTO pacientes (cpf, nome, sexo)
+VALUES ('56789012345', 'Ana Souza', 'F');
+
+create table medicospacientes(
+    crm char(8),
+    cpf char(11)
+);
+
+alter table medicospacientes
+add constraint fk_medicospacientes_crm FOREIGN KEY (crm)
+REFERENCES medicos (crm);
+
+alter table medicospacientes
+add constraint fk_medicospacientes_cpf FOREIGN KEY (cpf)
+REFERENCES pacientes (cpf);
+
+--criar um id para servir de chave primaria de uma tabela composta
+alter table medicospacientes
+add id_medicospacientes char(8);
+
+alter table medicospacientes
+add constraint pk_medicospacientes
+PRIMARY KEY (id_medicospacientes);
+
+select * from medicos;
+select * from pacientes;
+select * from medicospacientes;
+
+insert into medicospacientes(id_medicospacientes, crm, cpf)
+    VALUES (1, 12345678, 98765432109);
+
+-- insert into medicospacientes(id_medicospacientes, crm, cpf)
+--     VALUES (2, 12345678, 21424214);
+-- nao funciona ja que o cpf informado nao existe na tabela pai
+
+select *
+from medicospacientes inner join pacientes p ON p.cpf = medicospacientes.cpf;

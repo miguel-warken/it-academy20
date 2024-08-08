@@ -1,0 +1,41 @@
+01.07 Continuação
+
+CRUD Consultas
+
+Eager loading: carrega os dados para uso imediato
+Explicit loading: carrega os dados para uso futuro
+Lazy loading: carrega
+
+*Eager: já faz a consulta com join (.include)
+.Include() para achar dados associados
+Usar expressões do Linq com propriedades de navegação em .Include()
+
+var umBlog = contexto.Blogs
+                    .Where(b => b.Id == 1)
+                    .Include(b => b.Posts)
+                    .FirstOrDefault();
+
+    System.Console.WriteLine($"{umBlog!.Id} posts:");
+    foreach (var post in umBlog.Posts)
+    {
+        System.Console.WriteLine($"{post.Titulo}");
+    }
+
+*Explicit Loading
+ var umBlog = contexto.Blogs.Single(b => b.Id == 1);
+    //carregamento dos dados associados em algum momento (ex: agora)
+    contexto.Entry(umBlog)
+            .Collection(b => b.Posts)
+            .Load();
+    //neste momento, carregar as entidades associadas (de acordo com tipo)
+
+*Lazy Loading
+	Com proxy (coleção deve ser virtual)
+	Sem proxy (com injeção de dependência na entidade)
+
+Agora iniciaremos com ASP.NET
+
+Projeto parecido com outro, mas configurações no Program.cs par ASP.NET resolver
+
+
+

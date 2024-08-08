@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Tz6zVSL05pgGLJ+D/6pxo/iPMy4f9th8+HUedOnS6lsxvyWCsG0B3qr5Zb9iXYF6RQim6xpl5QMNv1u/QZne0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Miguel_Warken\\Documents\\Modulo7_Selenium\\Projetos\\24.07 IntroSelenium\\01Intro\\01Intro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Miguel_Warken\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Miguel_Warken\\.nuget\\packages\\selenium.webdriver\\4.23.0\\selenium.webdriver.4.23.0.nupkg.sha512",
+    "C:\\Users\\Miguel_Warken\\.nuget\\packages\\selenium.webdriver.chromedriver\\127.0.6533.7200\\selenium.webdriver.chromedriver.127.0.6533.7200.nupkg.sha512"
+  ],
+  "logs": []
+}

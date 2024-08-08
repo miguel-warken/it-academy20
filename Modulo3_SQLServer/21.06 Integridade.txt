@@ -1,0 +1,22 @@
+21.06
+
+Chaves candidatas: são únicas, mas não necessariamente a Primary Key (usada para identificação de fato)
+Chaves alternativas: são as que sobrarem das primárias após escolha da PK -> UNIQUE
+
+cpf VARCHAR(20) UNIQUE
+
+CONSTRAINT pk_alunos PRIMARYKEY (nroMatricula)
+CONSTRAINT AK1_ALUNOS UNIQUE (cpf)
+
+Bolinha pintada no conceitual: atributo identificador
+
+Integridade domínio: chaves
+Integridade de domínio: garantir que os dados inseridos sejam do domínio
+
+cláusula CHECK: 
+
+alter table filmes add constraint chk_duracao CHECK (duração > 30)
+
+ALTER TABLE nome_da_tabela
+ADD CONSTRAINT nome_da_fk FOREIGN KEY (coluna_fk)
+REFERENCES tabela_referenciada (coluna_referenciada);

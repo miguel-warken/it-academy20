@@ -1,0 +1,27 @@
+Sistema para controlar salas de reunião e alocações de reuniões de uma empresa
+
+Empresa atual há 8 salas de reunião, seus nomes são cores e não há necessidade de cadastrar/remover salas
+
+O sistema não tem login ou usuário (livre acesso) e deve ter:
+	- Persistência de tudo, histórico incluso
+	- 8 salas já prontas
+	
+
+1. Listar alocações
+	1.1. Por dia
+	1.2. Por sala
+
+2. Alocar uma sala até no máximo 10 horas no dia
+	2.1. Cor, dia e horário de início e de fim (sempre hora cheia)
+	2.2. Texto livre, podendo conter nome do responsável (opcional)
+	2.3. Alocações são das 8h às 18h e é possível alocar o dia inteiro, sem necessidade de intervalo entre 	     alocações
+
+3. Remover uma alocação, contanto que ela esteja no futuro
+	3.1. Exclusão não precisa de registro ou de justificativa
+
+4. Consultar o percentual de alocação de cada sala por dia de semana
+	4.1. É sobre todas as alocações ANTERIORES e verificar para cada dia e para cada sala
+
+*Não é necessário exibir em calendário nem com feriados e tals.
+
+	

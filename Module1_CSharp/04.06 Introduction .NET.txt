@@ -1,0 +1,24 @@
+Introduction .NET 04.06 June 4th
+*Following Introduction Slides
+
+
+- .NET: "Wider" Development Platform -> set of languages (C#, F# and Visual Basic) & libraries
+ |-Fonts: DELL articles and supplier documentation (dotnet.microsoft.com)
+
+- Console applications in Desktop category. Applications with solutions that include .NET. Those that were made using .NET probably HAD TO.
+
+- Different technologies with same libraries and APIs (abstraction) and same Infrastructure
+
+- Packages via NuGet Manager (nuget.org) depending on project scope.
+
+*Hello World .NET Tutorial*
+
+- Git commands. SSH Generated on local machine and assigned to GitHub
+- ssh git@github.com (with the ssh key inside the project folder)
+- Repository page: Code -> SSH -> copy the SSH key
+|- git clone (paste the SSH above)
+
+- .NET CLI: Command Line Interface -> new, build and run -> dotnet new console -o 01HelloWorld (output directory)
+- code . -r (-r to use same vscode)
+- Ctrl + K + O to open folder in vscode
+- dotnet new console gitignore

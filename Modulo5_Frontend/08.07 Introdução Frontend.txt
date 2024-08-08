@@ -1,0 +1,30 @@
+08.07 Introdução Frontend
+
+
+Angular com TypeScript
+HTML/CSS/JS -> soluções para páginas web
+
+Lembrar da Acessibilidade: WebAim, Farol (lighthouse)
+
+*PLano de estudos
+**Html-now.github.io para tecnologias possíveis de se utilizar no navegador
+ - Categoria: Core
+
+**caniuse.com: quais são as versões suportadas de navegadores das plataformas que quero usar no meu projeto
+
+**Developer Mozilla
+
+*Marcações básicas e estrutura da página:
+DOM: Document Object Model
+
+Par de tags ou tag vazia é elemento.
+
+Tag - atributo - valor - conteúdo
+Há muitos tipos de elementos e atributos
+
+Event handler content attributes
+Doctype: quais regras devem usar, o HMLT5 é só html, os mais "elaborados" são legado
+
+html:5 já cria o DOCTYPE com configurações do html
+Sections, como body, nav, aside, footer...
+

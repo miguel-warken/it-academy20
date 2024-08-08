@@ -1,0 +1,82 @@
+19.07 Continuação Angular
+
+npx @angular/cli new demoservices para novo projeto
+
+Para definir componentes deve-se importar o Decorator @Component de '@angular/core'
+*selector é o nome do componente que irá aparecer para escolha em módulos
+*standalone permite que se importe um componente a partir de outro sem precisar fazer a divisão de módulos
+*templateUrl é a definição da view HTML
+*styleUrl é o estilo a ser utilizado
+
+Daí será dentro de class nomeClasse que definiremos nossas propriedades (padrão já tem o title)
+
+Uso de bindings para acessar ditas propriedades, a mais simples é INTERPOLAÇÃO com {{titulo}}
+
+*npm (ou x) install na raiz do projeto para baixar todas dependências constatadas no .json
+
+npm run build e npm run start
+
+-> Componentes no Angular podem ter métodos executados quando alguma ação acontece, como ngOnInit() ou ngOnDestroy() **Usaremos interfaces para implementar estes métodos**
+	|- Estes métodos são usados para DEFINIR ESTADOS INICIAIS DAS NOSSAS PROPRIEDADES
+	|- Estão dentro de ChangeDetection (daí tem vários métodos cabíveis de utilização)
+
+Agora criando usuários para utilizar esses métodos
+	|- Uma nomenclatura possível é usuário.model.ts ou só usuario.ts (dentro de diretório Models)
+	|- Nomes não mudam nada, apenas organização
+
+Se comportamento rico para representar usuário: classe. Senão, pode-se usar um type ou interface
+
+export type Usuario = {
+    id: number,
+    nome: string,
+    dataNascimento?: Date
+} <--- EM JSON! TIPANDO UM USUÁRIO!
+
+Agora colocar export e import para transferência entre módulos e colocando no array de usuários do componente app
+
+usuarios: Usuario[] <- Sempre tipando
+
+Agora mostrando como lista na view de appcomponent, utilizando um for (já que o array é iterable no javascript), imprimimos um de cada vez.
+	|**O track usa uma propriedade única de cada um para iterar. Neste caso, usuário.id!!
+	|-   <p>{{usuario.id}}</p> sempre usando interpolação
+	|- Usamos @for e @if para elementos dentro de dito componente
+
+
+- Services: componentes consomem serviços que fornecem funcionalidades independentemente de uma view, como por exemplo, validar dados!
+- Criar uma classe @Injectable definindo o contexto dela (qual módulo vai conhecer o serviço e quem vai poder ter a injeção de dependência dela)
+- Então exportar ela com suas funcionalidades
+
+*Para criar template de um service se eu quiser
+ng generate service [name] [options]
+(também generate component... qualquer coisa que o angular tenha)
+
+*Lembrar de privar propriedades que eu queira
+*get e set: palavras-chave e a classe já sabe (do js)
+
+adicionar(novo:Usuario){} <- também possível ir criando os métodos tipados
+Esses tipos de método deve-se tomar cuidado para tipar o retorno, já que pode vir o objeto ou undefined
+
+No componente eu importo o inject e uso keyword inject(nomeServico) para injetar o serviço
+
+export class AppComponent {
+  titulo: string = 'demoservices';
+  usuariosService = inject(UsuariosService);
+  usuarios: Usuario[] = [];
+}
+
+*Agora deve-se inicializar os usuários com algum valor, implementando interface ngOnInit
+Daria para fazer diretamente pela propriedade do componente, mas o construtor deve ser curto e rápido para renderizar a tela
+
+Colocando o serviço no root torna ele em um singleton compartilhando dados entre todos os componentes (uma única instância compartilhada)
+
+
+
+**Angular ROUTER**: definir rotas que mapeiam urls para views -> DEVE SER IMPORTADO NO COMPONENTE DE ACORDO
+Duas propriedades essenciais: path e component
+RouterOutlet define a view (html) que será renderizada
+Ordem das rotas e importante, já que a primeira que coincidir é a escolhidas
+title para titulo da guia
+
+RouterLink define como a URL irá se "montando" e irá dar a view de acordo
+
+

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XFf4cA+Sc9AxCLi687Ob88Jr1WFvL3L89E1A5T+m7E8=",
+  "Source": "DemoWebServiceScaffoldSqlServer",
+  "BasePath": "_content/DemoWebServiceScaffoldSqlServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

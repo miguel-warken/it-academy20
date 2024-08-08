@@ -1,0 +1,15 @@
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\bin\Debug\net6.0\Lab05_ClassesHeranca.exe
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\bin\Debug\net6.0\Lab05_ClassesHeranca.deps.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\bin\Debug\net6.0\Lab05_ClassesHeranca.runtimeconfig.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\bin\Debug\net6.0\Lab05_ClassesHeranca.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\bin\Debug\net6.0\Lab05_ClassesHeranca.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.csproj.AssemblyReference.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.AssemblyInfoInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.AssemblyInfo.cs
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.csproj.CoreCompileInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\refint\Lab05_ClassesHeranca.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\Lab05_ClassesHeranca.genruntimeconfig.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab05_ClassesHeranca\Lab05_ClassesHeranca\obj\Debug\net6.0\ref\Lab05_ClassesHeranca.dll

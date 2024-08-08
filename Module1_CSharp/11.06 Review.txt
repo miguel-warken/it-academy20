@@ -1,0 +1,66 @@
+-Sistema Bancário
+	|- Cliente:
+	|- Nome, Data de nascimento
+	|- Pode ter uma ou mais contas:
+	|- Conta: , Saldo (com operações de saque e deposito)
+		|- Conta Corrente:
+			|- Não tem crédito
+			|- Data de abertura da conta
+		|- Conta Especial:
+			|- Tem limite de crédito
+			|- Data de abertura da conta
+		|- Conta poupança
+			|- Não tem crédito
+			|- Juros a cada mês
+			|- Data de abertura da conta
+	
+	|- Consultas:
+		|- Listar clientes
+			|- Só os nomes
+			|- Só os nomes e quantidade de contas
+			|- Só o nome e Valores totais
+			|- Só o nome e valor total por tipo de conta
+		|- Listar quantidade de contas
+			|- Por tipo
+			|- Por valor
+	|- Operações:
+		|- Cadastro de usuário
+		|- Cadastro de conta para usuário
+		|- Saque de valores
+		|- Aplicação de juros para as contas poupança/investimento
+
+dotnet add reference ..\01Bank\01Bank.csproj
+dotnet test
+
+
+Test 1
+ ContaCorrente cc = new(0,);
+        cc.Depositar(100);
+        Assert.Equal(100, cs.Saldo);
+
+Test 2
+ContaSimples cs = new();
+cs.saque(100)
+Assert.NotEqual(100, cs.saldo)
+
+
+[Theory]
+[InlineData(150)]
+[InlineData(-150)]
+[InlineData(1.00)]
+
+[Theory] (entrada, esperado
+[InlineData(150,150)]
+[InlineData(-150, -1)]
+[InlineData(1.99, 1.99)]
+usar valores das fronteiras!
+
+Test3 (double valor)
+ContaSimples cs = new();
+if(valor<0){
+	cs.saque(valor*-1)
+	Assert.Equal(0, cs.saldo)	
+} else {
+	cs.deposito(valor)
+	Assert.Equal(0, cs.saldo)
+}

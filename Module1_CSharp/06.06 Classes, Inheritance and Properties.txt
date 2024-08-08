@@ -1,0 +1,35 @@
+06.06 Properties, classes
+
+- A property, differently from an attribute, is data/info associated to an instance.
+	|- Getters and Setters for accessing/changing properties.
+	|- public string Nome { get {return nome; } set { nome = value } }
+	|- Changing info through .nome, it automatically uses the set method.
+
+- Indexer: accessing specific element inside object
+	|- Always created with "this" keyword because it is related to the object
+	|- An example of use is getting info from an object inside an array (on code)
+	|- Useful for creating a library/classes, defining a specific behavior for "this" keyword
+
+-Method Overloading:
+	|-We can define default values in params
+	|- Changing order of params changes constructor (there can't exist two constructors with same params 	types in the same order. HOWEVER, utilizing "out", "params" or "ref" works as another thing and compiler 	accepts it.
+
+ //When constructor with no params called for, use this one.
+    public Cliente() : this("A name", 11M, 171) { }
+
+    //The "this" keyword searches for a constructor that matches the parameters. Since it is blank, it will use the constructor above that UTILIZES ANOTHER CONSTRUCTOR
+    public Cliente(int p1, int p2) : this()
+    {
+        p2 = 100;
+    }
+
+----------
+
+Static: class's resource/attribute, not instance's. If I don't want it to be modified, I set it as a public property and do NOT create the set method.
+
+Cliente object HAS TO EXIST so that the attribute NAME exists. CAN'T ACCESS NAME AS IT EXISTED WITHOUT A CLIENT OBJECT.
+
+- Delegate and lambda skipped.
+
+- Inheritance: overridable methods has to be virtual on base class
+	|- base.method_name

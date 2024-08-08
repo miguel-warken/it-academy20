@@ -1,0 +1,11 @@
+29.07 Devops e arquétipos
+
+CI: nova release que passou nos testes, versão azul escuro do desenho
+
+Configuração do GitHub actions para cada adição ele compilar e testar tudo
+
+GitHub scanning para garantir qualidade do código
+
+GitHub actions cria a pasta artefato 
+
+***Tentar configurar essas actions para um projeto e para automatizar os testes

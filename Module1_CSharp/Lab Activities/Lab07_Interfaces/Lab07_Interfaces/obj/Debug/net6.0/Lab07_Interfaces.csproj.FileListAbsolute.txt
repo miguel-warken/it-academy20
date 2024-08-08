@@ -1,0 +1,15 @@
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.csproj.AssemblyReference.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.AssemblyInfoInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.AssemblyInfo.cs
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\bin\Debug\net6.0\Lab07_Interfaces.exe
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\bin\Debug\net6.0\Lab07_Interfaces.deps.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\bin\Debug\net6.0\Lab07_Interfaces.runtimeconfig.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\bin\Debug\net6.0\Lab07_Interfaces.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\bin\Debug\net6.0\Lab07_Interfaces.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\refint\Lab07_Interfaces.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\Lab07_Interfaces.genruntimeconfig.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab07_Interfaces\Lab07_Interfaces\obj\Debug\net6.0\ref\Lab07_Interfaces.dll

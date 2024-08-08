@@ -1,0 +1,16 @@
+10.06
+
+- Review of what has been seen until now
+- Jagged Arrays: multidimensional arrays that can have different rows and columns lengths;
+- fori < col[i].Length <- we use this, since we don't know the Length of each line or colunms
+
+- Jagged: int[][], Multdimensional: int[,]
+
+- Generic types: 95% classes. Previously, we had to foresee what types would go in parameters
+	|- With generic types, we can "care less" about that
+	|- Checks and assigns a type when compiled
+	|- More performance: less boxing and unboxing
+	|- Good practice!
+	|- Lists (LinkedList generic restricted), Dictionaries, KeyedCollection...
+	|- E.g.: instantiating an ArrayList as a list<>
+	

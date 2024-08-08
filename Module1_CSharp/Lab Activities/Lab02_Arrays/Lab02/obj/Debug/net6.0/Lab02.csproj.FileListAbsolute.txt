@@ -1,0 +1,15 @@
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\bin\Debug\net6.0\Lab02.exe
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\bin\Debug\net6.0\Lab02.deps.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\bin\Debug\net6.0\Lab02.runtimeconfig.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\bin\Debug\net6.0\Lab02.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\bin\Debug\net6.0\Lab02.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.csproj.AssemblyReference.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.AssemblyInfoInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.AssemblyInfo.cs
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.csproj.CoreCompileInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\refint\Lab02.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\Lab02.genruntimeconfig.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab02_Arrays\Lab02\obj\Debug\net6.0\ref\Lab02.dll

@@ -1,0 +1,37 @@
+16.07 Módulos TS
+
+Para dividir e organizar código. É um agrupamento de código para outros módulos usarem sua interface e especificar outros que ele utilize (dependências).
+
+Por exemplo, usar export antes da declaração da função ou usar export{nomeFuncao}
+
+import{nomeFunco as alias} from './caminho'
+
+Dá pra importar objeto também, import ... from ...
+
+**Funções assíncronas:
+-> Callbacks, promises a async/await
+
+Callback é função passada como argument=o para segunda função de alta-ordem, onde essa segunda irá executar a primeira em algum momento futuro
+
+readFileSync e writeFileSync -> import * as fs from 'node:fs' (são ambas síncronas, mas importadas do node)
+
+
+const json = JSON.stringify(obj)
+
+try...
+fs.writeFileSync('dados.json', json);
+
+catch(error) <- erro fica do tipo unknown, então devemos assertar seu tipo ele para acessarmos suas propriedades
+
+console.error((error as Error).message); <- assertando o tipo para usar
+
+***fs.readFile vai ler o arquivo e quando terminar a leitura vai executar a função no callback***
+Não encadear callbacks
+
+
+-> Promises
+Promessa de um resultado futuro: pending, fulfilled (sucesso) e rejected (erro)
+new Promise(resolve,rejected)=>{...}
+Dentro das chaves colocando um setTimeout
+
+-> async e await

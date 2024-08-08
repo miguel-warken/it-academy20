@@ -1,0 +1,14 @@
+25.07
+
+CheatShet de termos/praticas
+
+https://cheatsheets.zip/
+https://testrigor.com/blog/selenium-with-c-cheat-sheet/
+
+Test Manager Microsoft: produto pago para gerência de testes
+Testar não só com automáticos, mas manuais também
+
+Quando recebendo report de bug, deve-se confirmar que o "bug" não é uma funcionalidade paga
+
+Distribuir os testes pelo sistema
+O teste sempre é aprovado ou reprovado, sendo o "bom" aquele que reprova

@@ -1,0 +1,22 @@
+05.02 Continuação Lojinha: Heranças 
+
+Entre usuários, clientes e administradores, há uma relação de herança (herdam de usuários)
+
+Não é possível implementar essa herança no modelo relacional.
+Herança por hierarquia, uma tabela por classe concreta e uma por classe
+
+(Para exemplo: por hierarquia)
+Novo projeto: DemoConsoleSqlServer3, adicionando os pacotes Framework.Core.SqlServer e Core.Design
+*Classe abstrata para pessoa (nunca vai haver só uma pessoa)
+*Empregado e Cliente herdam de pessoa
+Herança por hierarquia: uma tabela por hierarquia (joga o tipo de pessoa em uma tabela com seus atributos)
+**Discriminator é o atributo que define o tipo do objeto como string
+
+(Uma por classe concreta e uma por classe)
+TptMappingStrategy (table per table?) ou Tpc (table per class)
+por classe concreta n da no ef 6
+
+Problemas de concorrência e transacionais
+
+-Transação: se dá erro inserindo um cliente (criando), não deve criar a pessoa também
+Catch DbUpdateConcurrencyException

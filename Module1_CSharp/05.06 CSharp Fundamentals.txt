@@ -1,0 +1,54 @@
+05.06 C# Fundamentals
+
+- Strong typed language. If not explicit, compiler will assume variable's type;
+- Data types: Common Type System (CTS);
+	|- Value and reference types;
+
+- EVERYTHING is a part of the 'Object' type. By default, these are reference type;
+
+- The value type is composed by int, float, double, Boolean, enumerated elements...
+	|- Stored in stack memory and this space is limited and static (which means it can run out of memory);
+	|- Cannot be null;
+
+- The reference type has A REFERENCE to the heap memory (place where all processes can allocate memory accordingly to Operating System;
+	|- Inside the stack memory there is the REFERENCE (address) to the value in heap memory;
+	|- Refer to objects;
+	|- Can be null;
+
+
+- Boxing and Unboxing:
+	|- Boxing is assigning a value type to a reference type, causing the stack memory to have a "box" that refers to the place in heap memory. Although the object has a value, it is a reference;
+	|- Unboxing is the opposite process, bringing the value back to the stack memory (e.g.: casting an object variable);
+- These acts have a high cost (duplicated variables, more memory space used...);
+
+- Voidable/Nullable Types:
+	|- References to NULL to avoid exceptions;
+	|- Setting that can be enabled or disabled;
+	|- "NullSafety".
+	|- Either value types and reference types can be nullable: int?, string? (utilizing '?', if it is null, then its methods can't be used):
+
+		|- Null-forgiving (!) -> if variable nullable, compiler can say it wasn't initialized. Previously dealt with (p!.Name example), variable won't warn about it or give errors. It can be bad practice if the preparing is not done properly;
+
+		|- Null-coalescing (??) -> I don't want operations to generate NULL results, ?? makes that if (a ?? b) if 'a' equals NULL, then choose 'b'. (a ??= 0) if 'a' null, then become 0.
+
+		|- Null-conditioning (?.) -> Do certain operation if variable exists, otherwise, ignore it.
+
+- Attribute variables can be initialized with default values, such as 0 for ints;
+	|- >>>>> This doesn't apply for local variables!! <<<<<
+
+- When using the Nullable type, it is different;
+- dotnet new console -o 01Nullable --use-program-main (to show language's structures)
+
+- int abc = default		-> 0
+- int? abc = default		-> NULL
+- DateTime cde = default	-> 01/01/0001 00:00:00 (default)
+- DateTime? cde = default 	-> NULL
+	|- Nullable variables have NULL as default value
+
+- namespace = java package
+- Implicit using ENABLED: no need to write "using" or "public"
+
+- Exercises 1, 2
+
+- Parameters: blank(in only), out (result generated), ref (altered variable), params(array) -> a(1,2,3 or arr[])
+

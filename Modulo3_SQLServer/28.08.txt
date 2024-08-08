@@ -1,0 +1,25 @@
+28.08
+
+Entidades associativas: possuem uma chave composta por duas PKs das entidades n-n que queremos relacionar
+
+create table ent1ent2(
+	pk1,
+	pk2,
+	constraint pk pk_ent1ent2(pk1,pk2),
+	constraint fk fk_ent1 references ent1(ent1.pk1),
+	constraint fk fk_ent2 references ent1(ent2.pk2
+)
+
+select * 	
+from medicos join consultas on medicos.crm = consultas.crm
+join pacientes on consultas.cpf = pacientes.cpf
+where consultas.data_hora > sysdate and consultas.data_hora <= sysdate +1
+order by consultas.data_hora;
+
+outer join
+
+a join b
+
+a left join b: inclui registros de a que podem estar nulos em campos que conectam com b
+
+fazer questões 2,3,4,5 para próxima aula

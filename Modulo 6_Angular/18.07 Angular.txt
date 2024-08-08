@@ -1,0 +1,26 @@
+18.07 Angular
+
+Single Page Applications
+
+Client Side Rendering CSR -> realizado pela engine do Angular no navegador pelo código JS
+
+SSR Server Side Rendering 
+
+SSG Static Site Generation: renderizado em tempo de build da aplicação
+
+Angular manipula componentes, não apenas views, como mvc
+
+Angular CLI que nem o dotnet
+Módulos, componentes, diretivas e serviços
+
+Inicialmente será um único módulo
+
+npx @angular/cli new lab1
+*CSS
+*N p/ Client-Side Rendering
+Instalar angular notebook dell E AngularDevTools
+
+Componente visual no angular: alguém que encapsula o comportamento visual, dados e manipulação em uma classe
+O estado de dito componente é dado pelo estado das propriedades
+
+Standalone: true para mais simplicidade

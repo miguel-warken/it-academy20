@@ -1,0 +1,42 @@
+03.07 EF Scaffolding (reverse engineering)
+
+*Hoje descobrir como começar em um modelo database-first para transformar em um db context com entidades
+
+Projeto ASP NET Core Web Api
+dotnet new webapi -o DemoWebServiceScaffoldSqlServer -f net6.0
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.31
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.31
+
+Várias opções de scaffolding, tais como quais tabelas passar para código.
+*Como gerar as entidades e DBContext
+
+dotnet ef dbcontext scaffold "Name=ConnectionStrings:DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer -o Models --context-dir Database -c BibliotecaContext --namespace DemoWebServiceScaffoldSqlServer.Models --context-namespace DemoWebServiceScaffoldSqlServer.Database
+
+Tudo que mudar na entidade deve ser mudado no dbcontext também, como o nome, tipos ou inicialização.
+Também, dentro de Dbcontext, dá para mudar nomes de DbSets
+
+builder.Services.AddDbContext<BibliotecaContext>();
+dentro de Program.cs para definir o nosso dbcontext
+
+Criando lojinha, continuar fazendo o exercício de laboratório!! (ou fazer o exercício, não sei se tem relação)
+
+Criamos entidades -> tabelas associativas -> dbcontext, ajustamos no program.cs e fizemos a migração e o update
+
+Agora vamos criar os serviços e controladores, primeiro esqueleto das interfaces dos repositórios e então alguns controladores (que herdam de ControllerBase)
+
+Com asp net core, usamos as anotações, como [ApiController] ou:
+
+[HttpGet]
+    public Task<> GetTodos(){
+  	...      
+    }
+
+usando async e await de maneira assíncrona (resposta não necessariamente direto)
+
+Para retornar apenas os dados relevantes para um controlador: DTO (nova classe)
+
+PADRÃO MAP FILTER REDUCE (map = select, filter = where, reduce = aggregate)
+return produtos.Select(ProdutoCatalogoRespostaDTO.DeModelParaDto);
+**pega da lista de produtos e mapeia utilizando esta condição
+

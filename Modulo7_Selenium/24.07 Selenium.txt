@@ -1,0 +1,10 @@
+24.07 Selenium
+
+Testes devem ser simples e curtos
+
+O Selenium é recuperado através do NuGet
+
+dotnet add package Selenium.WebDriver
+dotnet add package Selenium.WebDriver.ChromeDriver
+
+.navigate, .quit, .sendkeys (com texto e depois com keys.enter)

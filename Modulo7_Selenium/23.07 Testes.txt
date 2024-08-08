@@ -1,0 +1,38 @@
+23.07 Testes
+
+Comportamento é a palavra-chave -> internamente e externamente
+
+Para realizar testes deve-se saber qual o objetivo do sistema e o que ele deveria fazer
+
+Como eu faço testes sem saber o que o sistema faz? Como eu registro um requisito? Qualidade é atender um requisito.
+
+Exemplos de funcionamento do sistema, para sabermos o comportamento que ele deve tomar diante de certa situação e ir afunilando os comportamentos e escrever testes mais precisos.
+
+Automação para testar funcionalidades antigas que podem ter sido afetas por novas funcionalidades criadas.
+
+Selenium -> automação de browser.
+
+Com um software (código-fonte + documentação) é possível criar testes qualificados. Uma documentação pode ser o manual do usuário. Testes sempre devem atender à especificação (documentação).
+
+
+5 Perspectivas de Qualidade
+- Transcendente: tentar sempre melhorar, como comparar com algum concorrente
+- De produto: qualidade interna
+- De usuário: usuário vai atrás do que ele quer - qualidade externa
+- De Produção: quão caro é o que quero fazer - qual processo é mais barato (já que o usuário está esperando)
+- De Valor: entregar o valor - impacto, maior qualidade possível entregável diante das limitações, como orçamento e tempo
+
+Modelo V*
+
+https://docs.gitlab.com/ee/user/project/description_templates.html#example-description-template
+
+Sugestão de preenchimento de campos para registrar um bug
+
+*Atividade 5
+
+User stories (as... i want to... so that...)
+Behaviour-driven development(given, when, then)
+
+SpecFlow: c sharp com exemplos e stories e automatiza geração de casos de testes
+
+**User Story com site TSE!!**

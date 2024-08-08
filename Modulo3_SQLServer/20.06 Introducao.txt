@@ -1,0 +1,47 @@
+Irei usar LiveSQL enquanto não aprovam minha requisição
+
+- SGBD bem configurado: nunca irá deixar entrar dados inconsistentes
+
+- Modelo conceitual independente de quaisquer implementações e tecnologias
+	|- Diagrama UML
+
+- Projetista BD (estruturas físicas e esquema lógico);
+- ADM BD (projetar, controlar e coordenar informações no BD);
+- ADM dados (manter coerência dos esquemas de dados corporativos, conectar múltiplos esquemas e tecnologias);
+- DEV: escreve consultas que serão usadas pelo cliente;
+- Usuário avançado: constrói suas próprias consultas e tem acesso ao DB;
+- Usuário comum: só usa a aplicação cliente desenvolvida por devs;
+- Usuário nível gerencial: usa ferramentas de data mining para obter decisões analíticas;
+
+- Modelos conceitual -> lógico -> físico (SQL)
+
+- NoSQL: bom para escalamento horizontal, enquanto que SQL tradicional não tem (para garantir CAP)]
+
+- Tuplas são conjuntos de dados
+
+- Temos uma tabela com colunas e cada linha é um registro de uma instância
+
+- DDL data definition language é para criar, alterar, deletar e MANIPULAR TABELAS
+- DML data manipulation language para criar, alterar, deletar e MANIPULAR DADOS
+- Linguagem para controle da transações: COMMIT, ROLLBACK e SAVEPOIN
+			|- de acesso a dados: GRANTE e REVOKE
+
+- Conectar: localhost, autenticação por windows e new database 
+- SQL Server e Studio: botão direito em database e em new database dentro do IT20 tem várias coisas
+- New query com botão direito em cima do db que queremos e no dropdown tem que aparecer IT20
+
+marca CHAR(50)
+"FIAT        (+um monte de espaços)"
+
+numeric (3,2)
+maior valor = 9,99 (três casas no total, mas duas decimais)
+
+insert into values ... <- não recomendado
+insert into [(colunas)] values... <- recomendado especificar as colunas
+
+Commits são "checkpoints" de operações, e rollbacks fazem undo apenas até o último commit
+há autocommits, podendo ser falsos and true (não tem rollback, sql server)
+
+ORM: arquitetura de software: conectar entidades de negócio e camada de persistência (dados)-
+
+Diferente de 0: <>

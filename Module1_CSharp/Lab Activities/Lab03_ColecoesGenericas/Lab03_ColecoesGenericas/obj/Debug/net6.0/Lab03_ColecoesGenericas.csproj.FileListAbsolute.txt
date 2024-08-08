@@ -1,0 +1,15 @@
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\bin\Debug\net6.0\Lab03_ColecoesGenericas.exe
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\bin\Debug\net6.0\Lab03_ColecoesGenericas.deps.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\bin\Debug\net6.0\Lab03_ColecoesGenericas.runtimeconfig.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\bin\Debug\net6.0\Lab03_ColecoesGenericas.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\bin\Debug\net6.0\Lab03_ColecoesGenericas.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.csproj.AssemblyReference.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.AssemblyInfoInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.AssemblyInfo.cs
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.csproj.CoreCompileInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\refint\Lab03_ColecoesGenericas.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\Lab03_ColecoesGenericas.genruntimeconfig.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab03_ColecoesGenericas\Lab03_ColecoesGenericas\obj\Debug\net6.0\ref\Lab03_ColecoesGenericas.dll

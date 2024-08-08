@@ -1,0 +1,7 @@
+Ligando CSS com HTML
+
+1. inline <p style="color: red">
+2. <style> junto ao head
+3. <link href="..."> referenciando o arquivo stylesheet.css
+
+-Html, css e toggle light/dark mode

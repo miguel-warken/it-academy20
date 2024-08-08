@@ -1,0 +1,32 @@
+- Plano de estudos para Entity Framework
+- Entity Framework documentation hub
+
+- Entity Framework: API do dotnet para persistência de dados
+- Dependências para as base de dados instaladas pelo Nuget
+- Database providers -> overview: pacote do nuget para instalar
+- Não se usa bd em memória, apenas para testes
+
+-Entity Framework Core != EF6
+	|- Usaremos a API Core (as versões atuais)
+dotnet tool install -g dotnet-ef --version 6.0.423
+
+dotnet new console...
+
+- Dependência para persistência de dados em memória
+- dotnet add package Microsoft.EntityFrameworkCore.InMemory
+- segundo pacote: dotnet add package Microsoft.EntityFrameworkCore.Design
+	|- Para adicionar certos comandos via linha de comando
+
+- dá para usar --version 6.0 para instalar de acordo com minha versão do .NET
+
+sonarlint para recomendações
+
+Dominio: entidades do negocio que precisam ser persistidas
+
+Classes: modelam os dados e o banco de dados é criado automaticamente quando entidades mapeadas
+
+- Code first é quando cria-se os objetos primeiramente por código para depois virarem uma tabela
+	|- como foi feito no exemplo em memória com configurações padrões
+
+DbContext.OnConfiguring para quando estiver sendo configurado o contexto
+||       .OnModelCreating para quando entidades estão sendo criadas (para configurar)

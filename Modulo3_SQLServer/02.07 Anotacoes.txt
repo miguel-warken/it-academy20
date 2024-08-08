@@ -1,0 +1,26 @@
+02.07
+
+Visões são tabelas virtuais. Se uma consulta for frequente, possível criar uma view para facilitar
+Não é uma cópia dos dados, e sim um "apelido" daquele select/consulta.
+
+create view PRODUTOS_IMPORTADOS as
+	select cod_produto, titulo, preco
+	from produtos
+	where importado = 'S';
+
+select * from PRODUTOS_IMPORTADOS
+
+*Também é possível adicionar joins juntos àquelas visões criadas
+*Ou criar views em cima de views
+
+Funções sobre linhas retornam um valor para cada linha, enquanto que funções sobre conjuntos de linhas retornam um valor para determinado conjunto.
+
+GROUP BY -> HAVING: decide quem sobrevive dos grupos, um where para inserir nos grupos
+
+Subconsultas (como checar os produtos que o preço sejam maiores que o preço de um determinado produto).
+
+select ped.num_pedido
+from pedidos ped
+where ped.cod_cliente in (pode ter any, some aqui...)
+	(select adm.cod_administrador
+	 from administradores ADM);

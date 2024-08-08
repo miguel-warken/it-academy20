@@ -1,0 +1,51 @@
+27.06
+
+BlogId não é necessário para achar o Blog, já que objeto != id para achar o blog
+Se ao invés do objeto nomeado Blog fosse MeuBlog, a FK seria MeuBlogId
+
+- Também vai existir uma tabela associativa em relações n-n (não é uma nova entidade, é um relacionamento composto por duas FKs)
+-De Blog para Post é uma navegação de coleção (referencia um ou mais objetos)
+-De Blog para Post é navegação de referência (referencia um objeto)
+
+- Relacionamento de muitos pode ser propriedade só com get, já que uma vez que tenho referência para um elemento, posso adicionar mais nele
+
+Propriedade sombra: compilada em runtime e não aparece, servindo para a FK do objeto pai (no exemplo, o BlogId)
+	|- Se não explicitar vira opcional e não fica documentado o nome
+	|- Explicitando é melhor para documentação e fica obrigatório (a menos que haja nullable)
+
+modelbuilder.Entity<Blog>()
+	.HasMany(e=>e.Posts)
+	.WithOne(e=>e.Blog)
+	.HasForeignKey(e=>e.BlogId)
+	.IsRequired();
+
+*Recomendado utilizar sempre expressões ao invés de escrever por extenso nomes de propriedades
+
+É opcional explicitar a tabela associativa de relação n-n (quando explicitar é para alguma configuração)
+Post 1-n PostTags n-1 Tag
+
+
+modelbuilder.Entity<Post>()
+	.HasMany(e=>e.Tags)
+	.HasMany(e=>e.Posts)
+	.UsingEntity({...})
+
+Divisão de Tabela/Entidades
+-Quando BD já foi modelo e deve-se criar classes que mapeiam os dados para dentro
+-Quebra de dados em múltiplas tabelas
+-Database-First
+
+LINQ: Language Integrated Query
+	to Objects, DataSets, SQL, Entities, XML, JSON, etc...
+- LINQPad
+- Method syntax e query syntax
+	method: lambda (mais poderoso) -> métodos da api (de extensão)
+	consulta ( parece SQL)
+
+**LER CLIENT VS SERVER EVALUATION**
+
+Customers
+Customers.Count()
+Customers.Single ( c=> c.ID == 2)
+
+Se as pesquisas atribuídas a uma variável resultam o mesmo objeto, as variáveis vão ser iguais

@@ -1,0 +1,8 @@
+11.07 Continuação TS
+
+Var, global: hoisting -> global (em qualquer escopo, até antes de declarada)
+
+number, undefined, null, boolean e string
+
+se tiver mais parametros que função suporta, js não reclama, apenas faz como "sabe"
+parametros opcionais: x?: number, onde x pode ser do tipo number ou undefined!

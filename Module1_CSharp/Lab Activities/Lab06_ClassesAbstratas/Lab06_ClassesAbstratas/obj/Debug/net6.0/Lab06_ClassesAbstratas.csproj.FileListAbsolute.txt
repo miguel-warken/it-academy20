@@ -1,0 +1,15 @@
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\bin\Debug\net6.0\Lab06_ClassesAbstratas.exe
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\bin\Debug\net6.0\Lab06_ClassesAbstratas.deps.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\bin\Debug\net6.0\Lab06_ClassesAbstratas.runtimeconfig.json
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\bin\Debug\net6.0\Lab06_ClassesAbstratas.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\bin\Debug\net6.0\Lab06_ClassesAbstratas.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.csproj.AssemblyReference.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.AssemblyInfoInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.AssemblyInfo.cs
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.csproj.CoreCompileInputs.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\refint\Lab06_ClassesAbstratas.dll
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.pdb
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\Lab06_ClassesAbstratas.genruntimeconfig.cache
+C:\Users\Miguel_Warken\Documents\Module1_CSharp\Lab Activities\Lab06_ClassesAbstratas\Lab06_ClassesAbstratas\obj\Debug\net6.0\ref\Lab06_ClassesAbstratas.dll

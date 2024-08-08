@@ -1,0 +1,46 @@
+12.06 ASP.NET
+
+LinkedIn Learning
+
+Previously, locally running with dotnet run and build
+
+When going Web, we use ASP.NET: Asynchronous server pages
+	|- Infrastructure with many applications
+	|- Getting started official docs
+	|- MVC: Model View Controller standard, each layer 	meaning one component of the bigger system
+
+- ASP.NET: Organized resource to support applications and support structures
+
+-ASP.NET Core: View: what user sees, Controller: what user interacts with and Model: backedn and rules
+	|- Dependency injection standards implementation
+	|- Pipeline: automated linked actions
+
+- Integrated c# with .NET, focusing on Web Apps and API's (REST APIs)
+
+- Doc with links and materials
+
+- Only need other resources on runtime, not on compilation
+
+- Bootstrap, dependency injection, pipleline middleware
+
+-Path to endpoint can appear multiple problems
+
+- HTTP: HTML + JS + CSS
+	|- HTTP Response status codes: 100-199: info, 200-299: success, 300-399: redirection, 400-499: cliente error, 500-599: server error
+
+- When sending requisiton, some data gets translanted. Google.com -> ip address
+
+Static
+-Requisition asks for HTML: server gets that HTML file and others related and then returns the requisition with this as its contente
+
+ServerSide Rendering with dynamic sites
+
+-Views consume the model (application state)
+- Business rules generally on model
+
+dotnet new mvc --use-program-main
+
+var builder = WebApplication.CreateBuilder(args);
+initialization bootstrap: "boot for this web server"
+
+mapControllerRoute: default "values"

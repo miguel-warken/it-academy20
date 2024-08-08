@@ -1,0 +1,90 @@
+26.06 Continuação Atividade Tarefas BD
+
+Novo database no MSSMS -> propriedades mostra a porta do banco
+
+dotnet new console -o DemoConsoleSqlServer -f net6.0
+
+E então adicionar as dependências
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.31
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.31
+
+Model: classes de modelo POCO para mapearmos elementos do banco de dados
+	|- Code first e Database first
+
+Pasta models vai ter as entidades
+
+Built-in conventions: convenções para criação e mapeamento do Entity Framework
+
+Se houver um DbSet em um DbContext o EF conhece (para chegar até a classe entidade, que só vai realmente ser entidade quando o EF reconhecer)
+
+O dbcontext e set possuem o CRUD já pré-implantado. API de código fluente possuem todas as funções para configuração do projeto. Anotações não conseguem implantar todas as configurações.
+
+**Atributos públicos são mapeados automaticamente para colunas!!**
+**Seus tipos são mapeados pelo provider (no nosso caso, o SQL Server)**
+**Propriedade é opcional se puder ser atribuído null a ela**, caso contrário, obrigatória.
+**Possivel usar as anotações [Required] em cima**
+
+atributo com nome Id ou <nomeclasse>ID são entidades com PK na coluna, o resto é via código com fluent api ou anotação -> pk criada = PK_<nomeclasse>
+
+EF dá bind em construtores com parâmetros, só que não são configuráveis, então são bons quando deve haver um mapeamento específico
+
+onConfiguring para conexão com banco de dados
+onModelCreating para configurações de mapeamento de entidades para o banco de dados
+*ambos possuem default
+
+optionsBuilder.UseSqlServer(""); -> string de conexão com banco de dados
+
+https://learn.microsoft.com/en-us/ef/core/providers/sql-server
+
+Servidor (local de acordo com MSSMS): localhost
+Database (nome): TarefasBD
+
+**optionsBuilder.UseSqlServer(@"Server=localhost;Database=TarefasBD");
+	|- erro de restrição de acesso com servidor
+optionsBuilder.UseSqlServer(@"Server=localhost;Database=TarefasBD;Trusted_Connection=True");
+
+optionsBuilder.EnableSensitiveDataLogging().LogTo(Console.WriteLine);
+
+
+Agora: mudar configurações do mapeamento das colunas, como o numero do varchar de nome:
+
+modelBuilder.Entity<Tarefa>()
+            .Property(t => t.Nome)
+            .HasMaxLength(30);
+
+Ferramenta de migrações para criar o banco de dados: migrations ou scaffolding (engenharia reversa)
+	|- Migration: diretório criado automaticamente com arquivos cs gerados customizáveis
+	|- Se altera model, tem que gerar nova migração e dá pra customizar mais a migração se necessário
+
+
+dotnet ef migrations add Inicial (Inicial é o nome)
+undo: dotnet ef migrations remove (nome)
+
+Uma migration escaneia todos os objetos expostos pelo DbContext e para cada um deles, gera o código em c# para as tabelas com as configurações -> CODE-FIRST!!!!!
+	|- Além disso, as migrações vão "acumulando" dentro da pasta "Migrations" dentro do projeto, pois são os códigos que foram executados para aquela operação, sendo necessários para saber o que foi alterado.
+	|- A tabela de migrations tem o id (que nós definimmos o titulo) e versão do produto
+
+dotnet ef database update: tenta abrir conexão de acordo com ÚLTIMA MIGRATION CRIADA. se quiser outra, deve-se especificar qual migration
+
+só no .saveChanges() que ocorre a conexão e coloca os inserts gerados
+
+sp_help tarefas;
+
+Agora iremos alterar tarefa adicionando de volta a propriedade Descrição
+	|- adiciona nova migração com nome significativo (sempre criar novas)
+	|- dotnet ef migrations add AlteraTarefaNovaPropriedade
+	|- Se descrição fosse not null, teria que definir um valor padrão para os outros registros, se nao definirmos, vem, por exemplo, uma string vazia
+
+
+Agora novo projeto para exemplo de 1-n e n-n (com chaves) -> ainda usamos a tabela intermediária de n-n
+02Demo...
+
+1-n: blog-post
+public int BlogId { get; set; } FK (com o <entidade>Id, já sabe automaticamente que é uma FK)
+
+INSERT INTO [Posts] ([BlogId], [Conteudo], [Titulo])
+      VALUES (@p0, @p1, @p2);
+
+ao rodar, o BlogId é automaticamente adicionado
+

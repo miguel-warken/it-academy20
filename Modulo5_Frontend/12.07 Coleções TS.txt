@@ -1,0 +1,10 @@
+12.07 Coleções TS
+
+Declarar arrays diretamente com colchetes ou com Array<string> -> let x : string[] = [...]
+Possível aumentar tamanho array com posições além das que eu ja tenho, podendo causar espaços no meio
+
+Arrays esparsos, possível definir o length e simplesmente alocar um valor pra uma posição qualquer, armazenando NADA no meio -> é tudo junto: array esparso, multidimensional, lista, fila e pilha!!
+
+Não existem tuplas em javascript. Usando o .sort em numeros, eles são convertidos primeiro em string e então comparados.
+
+Iterator LABORATÓRIO 2

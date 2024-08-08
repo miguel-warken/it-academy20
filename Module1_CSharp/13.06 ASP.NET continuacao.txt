@@ -1,0 +1,25 @@
+13.06 Views (em português):
+
+MVC: três camadas: views(interface), model(entidades negócio) e controller(entender as requisições)
+
+Controller: classes com terminação de controller
+
+Req: HTTP -> Controller -> Model -> Persistência e volta por Controller -> View (atualizando) e dando a resposta
+
+Pattern do Program para padronizar o controle e a view
+
+Controladores tem endpoints que definem para onde vou. Controlador: orquestrador
+
+O conteúdo devolvido é encapsulado no protocolo HTTP, tendo relação com a view
+
+Convenções para nomes de controladores e URLS, mas podem ser customizados [Route("[controller]/[action]")] em cima de class que seja o controller
+
+-get, put, post...
+
+Controller não tem regras de negócio
+Qualquer controller (menos os mínimos) DEVEM herdar a classe Controller\ControllerBase (do MVC)
+
+public void Index()
+	Response.Write("<H1> Hello MVC </H1>");
+
+Marcação de Razor: @@ na frente

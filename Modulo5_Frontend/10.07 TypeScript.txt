@@ -1,0 +1,23 @@
+Extensões do CSS, como usar $,@ ou até que nem java(nome=...) antes de nomes de variáveis
+-Exemplo: mixin -> elementos de frameworks de css
+-Usamos essas extensões quando queremos um toolkit já amarrado (pronto) -> modularização mais complexa do css
+-Angular é uma dessas extensões e usa o TypeScript, que iremos ver
+*Ler plano de estudos do TS (JS)
+
+JS -> ECMAScript - Developer Mozilla
+Tabela de compatibilidade -> plataforma alvo e o que vou querer usar
+
+<script scr="Script.js">
+Usar modo restrito: "use strict";
+
+TS: JS + Sistema de Tipos + Analisador Estático de tipos -> TS é só para controle de tipos
+
+
+**Lab 00 ambiente** pedir adm para instalar o node e usar playground ou replit por enquanto
+
+npm init -y
+npm install typescript -D 
+npx tsc -v (qualquer coisa que não encontrar nos módulos ele baixa (sem v))
+npx tsc -init
+
+Mudar configurações do txconfig.json de acordo com o tutorial, como target -> es2022

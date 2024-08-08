@@ -1,0 +1,11 @@
+Get: capturar informação no servidor
+Post: mandar informação para servidor para processamento
+Put: fazer atualização  substituição no servidor
+Delete: Eliminar informação no servidor
+Patch: Alterar parcialmente objeto ou recurso várias vezes
+
+Curl: requisição via interface de comando para determinada URL, mas mesmo funcionamento que bowser ou postman
+
+Pelo Code Snipper do Postman, podemos ver como enviar as requisições através de várias tecnologias
+
+https://localhost:7270/IT/Bolo?nome=miguel
